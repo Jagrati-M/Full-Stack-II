@@ -4,64 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Colour Cards</title>
     <style>
+        .fixed {
+            position: fixed;
+            left: 50%;
+            text-align: center;
+            font-size: 45px;
+            background: linear-gradient(rgb(185, 48, 223), white);
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 2px;
+
+        }
+
         .container {
-            width: 100vw;
-            /* height: 100vh; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .box {
-            width: 150px;
-            height: 150px;
+            display: flex;
+            width: 900px;
+            height: 700px;
             color: white;
             font-weight: 100;
             text-align: center;
+            top:20%;
         }
+
 
         #box1 {
             position: sticky;
-            top: 10%;
-            left: 40%;
-            box-shadow: 10px 8px 0px #000000;
+            /* left: 40%; */
+            box-shadow: 10px 10px 10px #000000;
+
         }
 
         #box2 {
             position: sticky;
-            top: 10%;
-            left: 30%;
+            /* left: 30%; */
         }
 
         #box3 {
             position: sticky;
-            top: 10%;
-            left: 20%;
+            /* left: 20%; */
         }
 
         #box4 {
             position: sticky;
-            top: 10%;
-            left: 10%;
-            /* box-shadow: 0px 12px 10px -5px rgba(0, 0, 0, 0.3); */
-            box-shadow: 10px 8px 0px #000000;
+            /* left: 10%; */
+            box-shadow: 10px 10px 10px #000000;
         }
 
         #box5 {
             position: sticky;
-            top: 10%;
-            left: 20%;
+            /* left: 20%; */
         }
 
         #box6 {
             position: sticky;
-            top: 10%;
-            left: 30%;
+            /* left: 30%; */
         }
 
         #box7 {
             position: sticky;
-            top: 10%;
-            left: 40%;
+            /* left: 40%; */
         }
     </style>
 
@@ -69,12 +80,13 @@
 
 <body>
     <div class="container">
-        <div class="box" id="box1" style="background-color:cadetblue;">1</div>
-        <div class="box" id="box2" style="background-color:cornflowerblue;">2</div>
-        <div class="box" id="box3" style="background-color:darkblue;">3</div>
+        <div class="fixed">Colour Cards</div>
+        <div class="box" id="box1" style="background-color:powderblue;">1</div>
+        <div class="box" id="box2" style="background-color:cadetblue;">2</div>
+        <div class="box" id="box3" style="background-color:cornflowerblue;">3</div>
         <div class="box" id="box4" style="background-color:slateblue;">4</div>
         <div class="box" id="box5" style="background-color: blue;">5</div>
-        <div class="box" id="box6" style="background-color:powderblue;">6</div>
+        <div class="box" id="box6" style="background-color:darkblue;">6</div>
         <div class="box" id="box7" style="background-color:midnightblue;">7</div>
     </div>
 </body>

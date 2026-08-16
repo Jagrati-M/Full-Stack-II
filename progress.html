@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            background-color: #EEE;
+            width: 100px;
+            height: 100px;
+            padding: 50px;
+        }
+
+        .bg {
+            position: relative;
+            background: conic-gradient(#f00, #0f0);
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .radial-overlay {
+            background-color: #EEE;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+
+        .left-half {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #EEE;
+            clip-path: inset(0px 50px 50px 0px);
+        }
+
+        .right-half {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #EEE;
+            clip-path: inset(50px 50px 0px 00px);
+            transform: rotate(87deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <div class="radial-overlay">87%</div>
+            <div class="right-half"></div>
+            <div class="left-half"></div>
+        </div>
+    </div>
+</body>
+
+</html>

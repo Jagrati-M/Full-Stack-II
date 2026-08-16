@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petals</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Creates 2 equal columns */
+            gap: 5px;
+            /* Adds spacing between boxes */
+            width: 400px;
+            /* Defines total width */
+            height: 400px;
+            /* Makes it a square (remove/change for rectangle) */
+        }
+
+        .box {
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            /* border-radius: 20px 50px; */
+        }
+        #box1{
+            border-radius: 30px 75px 10px 75px;
+            background-image: linear-gradient(135deg, black, white);;
+        }
+        #box2{
+            border-radius: 75px 30px 75px 10px;
+            background-image: linear-gradient(225deg, black, white);
+        }
+        #box3{
+            border-radius: 75px 10px 75px 30px;
+            background-image: linear-gradient(60deg, black, white);
+        }
+        #box4{
+            border-radius: 10px 75px 30px 75px;
+            background-image: linear-gradient(290deg, black, white);
+        }
+        .box5{
+            margin:50px;
+            height:500px;
+            width:500px;
+            background-image: conic-gradient(
+                lightblue 30deg,
+                powderblue 60deg,
+                cadetblue 90deg,
+                cornflowerblue 180deg,
+                slateblue 210deg,
+                blue 240deg,
+                darkblue 290deg,
+                midnightblue 320deg
+            );
+        }
+    </style>
+
+</head>
+
+<body>
+    <H2 class="fixed">Petal Cards</H2>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2" style="background-color:cadetblue;"></div>
+        <div class="box" id="box3" style="background-color:cornflowerblue;"></div>
+        <div class="box" id="box4" style="background-color:slateblue;"></div>
+    </div>
+    <div class="next-container">
+        <div class="box5"></div>
+    </div>
+    
+</body>
+
+</html>

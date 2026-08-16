@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-ring {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+            /* Creates the color segment */
+            background-image: conic-gradient(lightblue 30deg,
+                powderblue 0% 15%,
+                cadetblue 15% 30%,
+                cornflowerblue 30% 45%,
+                slateblue 45% 60%,
+                blue 60% 75%,
+                darkblue 75% 87%,
+                lightgrey 87% 100%);
+
+            /* Centers the inner circle text */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            color: black;
+            position: relative;
+        }
+
+        /* Creates the hollow center hole */
+        .progress-ring::before {
+            content: "";
+            position: absolute;
+            width: 160px;
+            /* Adjust to change the thickness of the ring */
+            height: 160px;
+            border-radius: 50%;
+            background-color: white;
+            /* Matches your page background */
+            z-index: 1;
+        }
+
+        /* Forces the text to render above the hollow overlay */
+        .progress-ring {
+            color: #333;
+        }
+
+        .progress-ring * {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-ring">70%</div>
+</body>
+
+</html>
