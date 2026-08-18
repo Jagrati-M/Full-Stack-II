@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #ddd;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111;
+        }
+
+        .newspaper {
+            width: 90%;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 55px;
+            letter-spacing: 5px;
+        }
+
+        .header p {
+            margin: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .line {
+            border-top: 2px solid black;
+            margin: 15px 0;
+        }
+
+        .headline {
+            text-align: center;
+        }
+
+        .headline h2 {
+            margin: 10px 0;
+            font-size: 35px;
+        }
+
+        .headline p {
+            font-size: 16px;
+        }
+
+        .box {
+            float: left;
+            padding: 0 15px;
+        }
+
+        .left-box {
+            width: 25%;
+            border-right: 1px solid #888;
+        }
+
+        .center-box {
+            width: 50%;
+            border-right: 1px solid #888;
+        }
+
+        .right-box {
+            width: 25%;
+        }
+
+        .box h3 {
+            font-size: 13px;
+            letter-spacing: 2px;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+
+        .box h2 {
+            font-size: 23px;
+            line-height: 1.1;
+        }
+
+        .box p {
+            font-size: 15px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .center-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .small-line {
+            border-top: 1px solid #999;
+            margin: 20px 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .bottom-box {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        .bottom-box:first-child {
+            border-right: 1px solid #888;
+        }
+
+        .bottom-box h3 {
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .bottom-box h2 {
+            font-size: 24px;
+        }
+
+        .bottom-box p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            clear: both;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 2px solid black;
+
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newspaper">
+        <div class="header">
+            <h1>THE DAILY</h1>
+            <p>Monday, August 18, 2026</p>
+        </div>
+
+        <div class="line"></div>
+        <div class="headline">
+            <h2>THE WORLD TODAY</h2>
+            <p>
+                Latest news and important stories from around the world.
+            </p>
+        </div>
+
+        <div class="line"></div>
+        <div class="news-section">
+            <div class="box left-box">
+                <h3>LOCAL NEWS</h3>
+                <h2>New Developments Bring Change</h2>
+                <p>
+                    The city is experiencing several new developments
+                    that are expected to improve daily life for residents.
+                </p>
+
+                <p>
+                    Officials have announced new projects focusing on
+                    transportation, education and public facilities.
+                </p>
+            </div>
+            <div class="box center-box">
+                <img src="https://via.placeholder.com/500x250" alt="News image">
+                <h3>FEATURE STORY</h3>
+                <h2>A New Chapter Begins</h2>
+
+                <p>
+                    Communities are coming together to create new
+                    opportunities and build a better future.
+                </p>
+
+            </div>
+            <div class="box right-box">
+                <h3>BREAKING NEWS</h3>
+                <h2>Important Updates Announced</h2>
+                <p>
+                    Officials shared new information today regarding
+                    several important developments.
+                </p>
+                <div class="small-line"></div>
+                <h2>Weather Update</h2>
+                <p>
+                    Clear skies are expected throughout the day with
+                    moderate temperatures.
+                </p>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom-section">
+            <div class="bottom-box">
+                <h3>SPORTS</h3>
+                <h2>Big Match Draws Huge Crowd</h2>
+                <p>
+                    Fans gathered to watch an exciting sporting event
+                    featuring two competitive teams.
+                </p>
+            </div>
+            <div class="bottom-box">
+                <h3>TECHNOLOGY</h3>
+                <h2>Technology Continues to Evolve</h2>
+
+                <p>
+                    New technologies are changing the way people learn,
+                    work and communicate.
+                </p>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            THE DAILY • NEWS • SPORTS • TECHNOLOGY
+        </div>
+    </div>
+</body>
+
+</html>
