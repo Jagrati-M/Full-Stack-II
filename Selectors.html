@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2px;
+            padding: 2px;
+        }
+        #myid{
+            color: brown;
+        }
+        .myclass{
+            color: cornflowerblue;
+        }
+        input[type="email"]{
+            border-radius: 10px;
+            border-color:purple;
+            border-style: outset;
+        }
+        ul>li.mycomb>span{
+            background-color: black;
+            color: chartreuse;
+        }
+        h2{
+            color: cadetblue;
+        }
+        h4 ~p{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>Selectors</h2>
+    <ul>
+        <li>Universal</li>
+        <li id="myid">ID</li>
+        <li class="myclass">Class</li>
+        <li>Attribute: Like types of Input boxes, etc</li>
+        <li>Element Name: Like H2, ul, etc.</li>
+        <li class="mycomb">
+            Combinators
+            <span>This is styled using parent-child combinators</span>
+        </li>
+        <li class="mycomb2">
+            Combinators
+            <h4>This is styled using siblings combinators</h4>
+            <p>Para 1</p>
+            <p>Para 2</p>
+        </li>
+        <li>Pseudo Class</li>
+        <li>Pseudo Elements</li>
+    </ul>
+    <input type="email">Email
+</body>
+</html>
