@@ -30,6 +30,37 @@
         h4 ~p{
             color: aqua;
         }
+        button:focus{
+            background-color: black;
+            color: brown;
+        }
+        /* button:hover{
+            background-color: black;
+            color: blueviolet;
+        } */
+         #a1:link{
+            text-decoration: none;
+            color: black;
+         }
+         #a1:visited{
+            text-decoration: underline;
+            color: brown;
+         }
+         #a2:link{
+            color: blueviolet;
+            text-decoration: underline;
+         }
+         #a2:visited{
+            text-decoration: line-through;
+            color: cadetblue;
+         }
+         input:checked{
+            accent-color: purple;
+            box-shadow: 1px 1px 10px black;
+         }
+         li:nth-child(odd){
+            background-color:crimson;
+         }
     </style>
 </head>
 <body>
@@ -38,7 +69,9 @@
         <li>Universal</li>
         <li id="myid">ID</li>
         <li class="myclass">Class</li>
-        <li>Attribute: Like types of Input boxes, etc</li>
+        <li>Attribute: Like types of Input boxes, etc
+        <input type="email">Email
+        </li>
         <li>Element Name: Like H2, ul, etc.</li>
         <li class="mycomb">
             Combinators
@@ -50,9 +83,14 @@
             <p>Para 1</p>
             <p>Para 2</p>
         </li>
-        <li>Pseudo Class</li>
+        <li>Pseudo Class
+        <button>Click Me!!</button>
+        </li>
         <li>Pseudo Elements</li>
     </ul>
-    <input type="email">Email
+    <a id="a1" href="#">Link</a>
+    <input type="checkbox">
+    <a id="a2" href="#">Link</a>
+    <input type="checkbox" checked/>
 </body>
 </html>
