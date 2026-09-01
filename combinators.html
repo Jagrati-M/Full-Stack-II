@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div :is(h2, h3){
+            background-color: black;
+            color: white;
+        }
+        div :has(h2, h3){
+            box-shadow: 0 0 3px black;
+        }
+        #a::before{
+            content: "★";
+            position: absolute;
+            left: 10px;
+            background-color: black;
+            width: 80px;
+            height: 80px;
+            border-radius: 0 10px 10px 10px;
+        }
+        #a::after{
+            content: "";
+            position: absolute;
+            left: 95px;
+            background-color: black;
+            width: 80px;
+            height: 40px;
+            border-radius: 0px 40px 30px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem Ipsum
+    </div>
+    <div class="div">
+        <h2>
+            Heading
+        </h2>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div class="div">
+        <h3>Heading 2</h3>
+        <p>Lorem Ipsum</p>
+    </div>
+    <div id="a">A</div>
+</body>
+</html>

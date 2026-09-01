@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aliceblue;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction:row-reverse;
+            height: 97vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #box1{
+            /* flex: 1; */
+            /* background-color:darkred; */
+            width: 400px;
+            background-image: linear-gradient(125deg,white, rgb(234, 214, 246), rgb(236, 194, 246));
+            color: rgb(0, 0, 0);
+            height: 400px;
+            margin: 1%;
+            min-width: 150px;
+            text-align: center;
+            box-shadow: 10px 0px 30px black;
+        }
+        #form{
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 25px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        input{
+            border-style: outset;
+            border-color: black;
+            display: block;
+            margin: auto;
+            padding: 10px;
+            font-size: 25px;
+            box-shadow: 5px 5px 5px black;
+        }
+        /* button{
+            background-color: green;
+            height: 50px;
+            width: 50px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">
+            <div id="form">
+                <h2>Login</h2>
+                First Name </br><input type="name" placeholder="name">
+                Email</br><input type="email" placeholder="email">
+                <button type="submit"></button>
+            </div>
+        </div>
+        <!-- <div id="box2">
+            2
+        </div>
+        <div id="box3">3</div> -->
+        <!-- <div id="box4">4</div>
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+        <div id="box7">7</div> -->
+    </div>
+</body>
+</html>
