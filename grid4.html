@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 3%;
+            
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-areas:
+                "box1 box1 box1 box1 box1"
+                "box1 box1 box1 box1 box1"
+                "box2 box3 box3 box3 box3"
+                "box2 box3 box3 box3 box3"
+                "box2 box4 box4 box5 box5 "
+                "box6 box6 box6 box6 box6";
+        }
+
+        @media (max-width:500px) {
+            .container {
+                grid-template-areas:
+                    "box1 box1 box1"
+                    "box2 box3 box3"
+                    "box2 box3 box3"
+                    "box2 box4 box5 "
+                    "box6 box6 box6";
+            }
+
+        }
+
+        .box {
+            background-color: palevioletred;
+            outline: 2px solid midnightblue;
+            min-height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>DashBoard Layout</h2>
+    <div class="container">
+        <div class="box" style="grid-area: box1;">Header</div>
+        <div class="box" style="grid-area: box2;">SideBar</div>
+        <div class="box" style="grid-area: box3;">Main Content</div>
+        <div class="box" style="grid-area: box4;">Card 1</div>
+        <div class="box" style="grid-area: box5;">Card 2</div>
+        <div class="box" style="grid-area: box6;">Footer</div>
+    </div>
+</body>
+
+</html>
