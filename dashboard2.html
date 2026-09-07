@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: aliceblue;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            width: 97vw;
+            height: 97vh;
+            outline: 2px solid black;
+            flex-direction: row;
+        }
+
+        .container>div {
+            outline: 2px solid black;
+        }
+
+        .navbar {
+            flex-basis: 25%;
+            display: flex;
+            background-color: #333;
+            /* height: 97vh; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .navbar>ul {
+            list-style-type: none;
+        }
+
+        .navbar>ul>li {
+            line-height: 2em;
+            font-size: 15px;
+            background-color: grey;
+            margin: 0px;
+            padding: 0px;
+            padding-top: 3%;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .navbar>ul>li:hover {
+            background-color: green;
+        }
+
+        #main {
+            flex-basis: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            height: 100%;
+        }
+        #topnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        #cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .box{
+            display: flex;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 5px grey;
+            width: 150px;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+        }
+        table{
+            width: 100%;
+            box-shadow: 0px 0px 2px black;
+            border-collapse: collapse;
+        }
+        tr{
+            
+            line-height: 2.5em;
+        }
+        tr:nth-child(odd){
+            background-color: grey;
+        }
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </div>
+        <!-- <div class="overview">Overview</div> -->
+        <div id="main">
+            <div id="topnav">
+                <h2>Dashboard</h2>
+                <h2>John Doe</h2>
+            </div>
+            <div id="cards">
+                <div class="box" id="box1" style="background-color:powderblue;">1</div>
+                <div class="box" id="box2" style="background-color:cadetblue;">2</div>
+                <div class="box" id="box3" style="background-color:cornflowerblue;">3</div>
+                <div class="box" id="box4" style="background-color:slateblue;">4</div>
+            </div>
+            <div class="table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
