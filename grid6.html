@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Peacock Feather</title>
+        <style>
+            :root{ /* variables:- */
+                --primary-color: brown;
+                --secondary-color: midnightblue;
+                --text-size: 40px; 
+            }
+            .container{
+                display: grid;
+                outline: 5px solid black;
+                box-shadow: 10px 10px 20px goldenrod;
+                border-radius: 10px 110px 10px 110px;
+                width: 500px;
+                height: 500px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                background-color: rgb(1, 89, 1);
+            }
+            .parent{
+                display: grid;
+                font-size: calc(var(--text-size) * 3);
+                grid-template-columns: subgrid;
+                grid-template-rows: subgrid;
+                grid-column-start: 2;
+                grid-column-end: 9;
+                grid-row: 2/9;
+                background-color: var(--primary-color, black); /* the second color after comma is called a fallback color*/
+                text-align: center;
+                border-radius: 10px 90px 10px 90px;
+            }
+            .child{
+                background-color: var(--secondary-color);
+                grid-column: 2/9;
+                grid-row: 2/9;
+                border-radius: 10px 80px 10px 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="parent">
+                <div class="child">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
