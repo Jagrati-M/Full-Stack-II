@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Methodology</title>
+    <style>
+        @font-face {
+            font-family: "WinterSong";
+            src: url("./fonts/WinterSong.ttf");
+        }
+        .card{
+            width: 200px;
+            padding: 3%;
+            border-radius: 10px 30px 10px 30px;
+            box-shadow: 3px 3px 10px grey;
+            margin: auto;
+        }
+        .card_para{
+            font-family: WinterSong;
+            font-size: 30px;
+            color: brown;
+        }
+        .card_button_submit{
+            background-color: black;
+            color: white;
+            box-shadow: 3px 3px 5px black;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="card_img" src="https://picsum.photos/200/300"/>
+        <p class="card_para">Lorem Ipsum</p>
+        <button class="card_button_submit">Submit</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Customizations from the task */
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --color-page: #F8FAFC;
+  --color-primary: #4F46E5;
+  --color-primary-hover: #4338CA;
+  --color-heading: #0F172A;
+  --color-body: #475569;
+  --color-line: #E2E8F0;
+}

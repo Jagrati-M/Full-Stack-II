@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@font-face {
+            font-family: HappyFestive;
+            src: url("/fonts/HappyFestive.ttf");
+        }
+@theme {
+    --color-coffee: orange;
+    --font-display: "HappyFestive", Times;
+    
+}
+
+/* @config "../tailwind.config.js"; */
+.heading{
+    @apply text-3xl 
+    text-center
+    text-black 
+    font-mono
+    font-bold 
+    h-14 
+    /* sm:bg-linear-65 sm:from-purple-700 sm:via-cyan-700 sm:to-pink-700
+    bg-linear-to-r from-pink-900 via-cyan-900 to-purple-900 */
+    
+}
+
+.container {
+    @apply col-start-1 
+    row-start-1 
+    grid 
+    grid-cols-2 
+    gap-4 
+    rounded-lg 
+    sm:grid-cols-4
+    sm:col-start-2
+    sm:row-start-3
+    text-center 
+    font-mono
+    text-lg
+    leading-6 
+    font-bold 
+    text-amber-200
+}
+.box{
+    @apply m-4
+    rounded-lg 
+    bg-linear-to-r from-fuchsia-500 via-cyan-900 to-purple-900 
+    p-4
+}

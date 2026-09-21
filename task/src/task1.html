@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="../dist/index.css" rel="stylesheet">
+</head>
+
+<body class="bg-page text-body font-sans text-base">
+  <div class="box-content max-w-300 mx-auto px-6">
+    <nav class="flex items-center justify-between h-18">
+      <a href="#" class="text-xl font-bold text-heading">Saaslify</a>
+
+      <!-- Links: hidden below 640px -->
+      <div class="hidden sm:flex items-center gap-8 text-sm font-medium">
+        <a href="#features" class="hover:text-primary">Features</a>
+        <a href="#" class="hover:text-primary">Pricing</a>
+        <a href="#" class="hover:text-primary">About</a>
+        <a href="#" class="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-lg">Get Started</a>
+      </div>
+
+      <!-- Mobile menu button: visible only below 640px -->
+      <button class="sm:hidden text-2xl text-heading" aria-label="Open menu">☰</button>
+    </nav>
+
+    <!-- HERO (80px below navbar, min-height 520px, vertically centered) -->
+    <section class="mt-20 min-h-130 flex items-center">
+      <div class="max-w-162.5 text-center sm:text-left">
+        <h1 class="text-[36px] sm:text-[48px] font-bold leading-[1.1] text-heading">
+          Build better products, faster than ever
+        </h1>
+        <p class="mt-5 text-lg leading-[1.6]">
+          Saaslify helps your team plan, ship, and grow with one simple platform. Start free and scale when you're ready.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="#" class="bg-primary 
+          hover:bg-primary-hover 
+          text-white 
+          font-medium 
+          px-6 
+          py-3 
+          rounded-lg 
+          text-center">Start Free Trial</a>
+          <a href="#" class="bg-white 
+          border 
+          border-line 
+          text-heading 
+          font-medium 
+          px-6 
+          py-3 
+          rounded-lg 
+          text-center 
+          hover:border-primary">Watch Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="mt-20 pb-20">
+      <h2 class="text-[32px] font-bold text-heading">Everything you need</h2>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border border-line rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-heading">Fast Setup</h3>
+          <p class="mt-2">Get up and running in minutes with no complicated configuration.</p>
+        </div>
+        <div class="bg-white border border-line rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-heading">Team Collaboration</h3>
+          <p class="mt-2">Work together in real time with comments, tasks, and shared boards.</p>
+        </div>
+        <div class="bg-white border border-line rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-heading">Powerful Analytics</h3>
+          <p class="mt-2">Track growth and performance with clear, actionable dashboards.</p>
+        </div>
+        <div class="bg-white border border-line rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-heading">Secure by Default</h3>
+          <p class="mt-2">Your data stays protected with encryption and role-based access.</p>
+        </div>
+        <div class="bg-white border border-line rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-heading">Integrations</h3>
+          <p class="mt-2">Connect the tools you already use with one-click integrations.</p>
+        </div>
+        <div class="bg-white border border-line rounded-xl p-6">
+          <h3 class="text-xl font-semibold text-heading">24/7 Support</h3>
+          <p class="mt-2">Our team is always here to help whenever you need us.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
