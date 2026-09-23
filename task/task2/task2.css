@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --color-page: #F8FAFC;
+  --color-heading: #111827;
+  --color-body: #6B7280;
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-sale: #DC2626;
+  --color-line: #E5E7EB;
+  --color-rating: #F59E0B;
+}
