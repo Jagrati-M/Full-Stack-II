@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechConnect 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">TechConnect</a>
+      <button class="menu-btn" id="menuBtn">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#details">Details</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>TechConnect 2026 University Summit</h1>
+      <p>One day of talks on artificial intelligence and cloud computing.</p>
+      <div class="hero-buttons">
+        <a href="#details" class="btn btn-primary">Register Now</a>
+        <a href="#schedule" class="btn btn-outline">View Schedule</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="details">
+    <div class="container">
+      <h2 class="section-heading">Event Details</h2>
+      <div class="details-grid">
+        <div class="detail-item">
+          <h3>Date</h3>
+          <p>15 March 2026</p>
+        </div>
+        <div class="detail-item">
+          <h3>Venue</h3>
+          <p>Main Auditorium, University Campus</p>
+        </div>
+        <div class="detail-item">
+          <h3>Entry</h3>
+          <p class="free">Free for all students</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="speakers">
+    <div class="container">
+      <h2 class="section-heading">Speakers</h2>
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <div class="speaker-img">AR</div>
+          <h3 class="speaker-name">Dr. Ananya Rao</h3>
+          <p class="speaker-role">Professor, Computer Science</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-img">JM</div>
+          <h3 class="speaker-name">James Miller</h3>
+          <p class="speaker-role">AI Researcher</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-img">SK</div>
+          <h3 class="speaker-name">Sara Khan</h3>
+          <p class="speaker-role">Cloud Architect</p>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-img">DP</div>
+          <h3 class="speaker-name">Daniel Park</h3>
+          <p class="speaker-role">Startup Founder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="schedule">
+    <div class="container">
+      <h2 class="section-heading">Schedule</h2>
+      <div class="schedule">
+        <div class="schedule-row schedule-head">
+          <div class="schedule-time">Time</div>
+          <div>Session</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-time">10:00</div>
+          <div>Opening Ceremony</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-time">11:00</div>
+          <div>AI &amp; Future</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-time">12:30</div>
+          <div>Lunch</div>
+        </div>
+        <div class="schedule-row">
+          <div class="schedule-time">02:00</div>
+          <div>Cloud Computing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    TechConnect 2026
+  </footer>
+
+  <script>
+    // Toggle the mobile menu
+    document.getElementById("menuBtn").addEventListener("click", function () {
+      document.getElementById("navLinks").classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>
