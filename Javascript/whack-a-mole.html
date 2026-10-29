@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole</title>
+    <link rel="stylesheet" href="whack.css">
+</head>
+<body>
+    <h2>Whack-a-Mole</h2>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="time">0</span> seconds</p>
+    <button onclick="startGame()">Start</button>
+    <div id="game">
+        <button onclick="hit(0)" id="b0">-</button>
+        <button onclick="hit(1)" id="b1">-</button>
+        <button onclick="hit(2)" id="b2">-</button>
+        <button onclick="hit(3)" id="b3">-</button>
+        <button onclick="hit(4)" id="b4">-</button>
+        <button onclick="hit(5)" id="b5">-</button>
+        <button onclick="hit(6)" id="b6">-</button>
+        <button onclick="hit(7)" id="b7">-</button>
+        <button onclick="hit(8)" id="b8">-</button>
+    </div>
+    <p id="message">Press Start to play!</p>
+    <script src="whack.js"></script>
+</body>
+</html>
