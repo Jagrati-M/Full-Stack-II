@@ -6,7 +6,7 @@ function play(){
     let val2 = document.getElementById("val2").value;
     let para = document.createElement("p");
     if (c>=7){
-        para.textContent= `No Chances left. Player 1 Score: ${p1} Player 2 Score: ${p2}`;
+        para.textContent= `No Chances left. \nPlayer 1 Score: ${p1}.\nPlayer 2 Score: ${p2}`;
     }
     else if (val1 == val2){
         c++;
